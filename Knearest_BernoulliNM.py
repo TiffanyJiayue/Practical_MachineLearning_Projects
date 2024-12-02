@@ -5,6 +5,14 @@ Created on Mon Dec  2 15:30:48 2024
 
 @author: Tiffany
 """
+# This script analyzes a wine quality dataset to predict 
+# whether a wine is classified as high quality (rating ≥ 7) or not. 
+# It performs data preprocessing by identifying and removing outliers, 
+# cleaning missing values, and engineering a binary target variable. 
+# The data is then standardized and used to train two machine learning models: 
+# K-Nearest Neighbors (KNN) and Bernoulli Naive Bayes (BernoulliNB). 
+# Model performance is evaluated using accuracy metrics and a confusion matrix, 
+# providing insights into the effectiveness of each approach for classifying wine quality.
 
 import pandas as pd
 # Import data
@@ -14,7 +22,7 @@ wine_data = pd.read_csv('/Users/XXX/winequality.csv')
 summary_stats = wine_data.describe()
 print(summary_stats)
 
-# Delect outliers before standarlization
+# Delect outliers before standardization
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -75,7 +83,7 @@ model_NB.fit(feature_train, label_NB_train)
 
 label_NB_pred = model_NB.predict(feature_test)
 # print(label_NB_pred)
-#### Check and evaluate how the model work ####
+#### Check and evaluate how the model works ####
 accuracy_NB = model_NB.score(feature_test, label_NB_test)
 print("Accuracy:", accuracy_NB)
 
