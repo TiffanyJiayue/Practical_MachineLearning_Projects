@@ -16,3 +16,7 @@ Some real-world examples:
 3. Whether to approve loan applications/bank customer segmentation.
 4. Help streaming platforms develop recommendations about various products (movies) and services.
 5. Given an automobile data set, we can use the scikit-learn library to estimate the CO2 emission of cars using their engine size or cylinders. 
+
+
+Supervised: teach the model with some labeled datasets
+numerical, categorical,
