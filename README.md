@@ -1,6 +1,9 @@
 # Machine Learning
 
+
 What I learn from Machine Learning Courses:
+
+Learn, understand, and differentiate / the human learning process
 
 Machine Learning algorithms (libraries: Scikit Learn/Pandas/Numpy)
 1. Regression: simple linear regression/multiple linear regression/ regression trees
