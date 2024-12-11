@@ -3,7 +3,7 @@
 
 What I learn from Machine Learning Courses:
 
-Learn, understand, and differentiate / the human learning process
+Learn, understand, and differentiate / the human learning process.
 
 Machine Learning algorithms (libraries: Scikit Learn/Pandas/Numpy)
 1. Regression: simple linear regression/multiple linear regression/ regression trees
@@ -19,4 +19,9 @@ Some real-world examples:
 
 
 Supervised: teach the model with some labeled datasets
-numerical, categorical,
+Types of Supervised Learning: Classification AND Regression
+- Classification is the process of predicting a discrete class label, or category.
+- Regression is the process of predicting a continuous value as opposed to predicting a categorical value in classification.
+
+Unsupervised: the model works on its own to discover information
+
