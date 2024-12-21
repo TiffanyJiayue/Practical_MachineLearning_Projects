@@ -11,13 +11,13 @@ Created on Wed Dec 11 15:19:48 2024
 # For this purpose, they give you a data set of 1,470 current and 
 # former employees with information on whether or not they have left the company, 
 # their tenure, gender, education, and several other variables 
-# (a description of discrete data can be found below). 
-# The company wants you to provide two classifiers
+# provide two classifiers
 
-# 1. a neural network that can predict employee attrition (variable name is attrition)
-# 2. a boosted ensemble of trees that can predict employee attrition 
+# 1. A neural network that can predict employee attrition (variable name is attrition)
+# 2. A boosted ensemble of trees that can predict employee attrition 
 # but also provide a ranking of feature importance 
 # (i.e. the features that have the largest influence on the decision to quit their jobs)
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -29,7 +29,7 @@ from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
 from sklearn.preprocessing import LabelEncoder
 
 # Load the dataset
-path = '/Users/heiyo/Documents/Pitt/MQE学习/MQE/ECON2824_machine/Finalweek'
+path = '/Users/MachineLearning'
 data = pd.read_csv(path + '/Simulate_HRemployee_attrition.csv')
 
 # Data cleaning and preprocessing
