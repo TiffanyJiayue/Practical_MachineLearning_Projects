@@ -133,20 +133,20 @@ pip install pandas numpy matplotlib seaborn scikit-learn
 ```
 
 ## Usage
-Clone the repository:
+1. Clone the repository:
 
 ```bash
 git clone https://github.com/your-repo-name.git
 cd your-repo-name
 ```
 
-Run the script:
+2. Run the script:
 
 ```bash
 python employee_attrition_analysis.py
 ```
 
-Update the dataset path (Simulate_HRemployee_attrition.csv) in the script if necessary.
+3. Update the dataset path (Simulate_HRemployee_attrition.csv) in the script if necessary.
 
 ## Output
 1. Neural Network:
@@ -157,3 +157,95 @@ Update the dataset path (Simulate_HRemployee_attrition.csv) in the script if nec
 2. Boosted Ensemble of Trees:
   - RMSE for predictions.
   - Feature importance bar chart.
+
+# Office Supplies Sales Forecasting
+
+This script analyzes historical sales data for office supplies, models the time series using the **Seasonal ARIMA (SARIMA)** framework, and generates forecasts for future sales. The goal is to provide actionable insights into sales trends and patterns.
+
+---
+
+## Overview
+
+The `Forecasting_Supplies.py` script processes time series data for office supplies sales, focusing on the following tasks:
+1. **Data Cleaning and Preprocessing:** Prepare the sales data for time series analysis.
+2. **Time Series Analysis:** Check stationarity and decompose the series into trend, seasonal, and residual components.
+3. **SARIMA Modeling:** Optimize the SARIMA model parameters using grid search and fit the best model to the data.
+4. **Forecasting:** Generate one-step-ahead forecasts and evaluate their accuracy.
+
+---
+
+## Features
+
+### Data Preprocessing
+- Filters sales data for the "Office Supplies" category.
+- Removes unnecessary columns and sets the `Order Date` column as a time series index.
+- Resamples the sales data to calculate monthly averages for analysis.
+
+### Time Series Analysis
+- Performs the **Augmented Dickey-Fuller (ADF)** test to assess stationarity.
+- Decomposes the time series into **trend**, **seasonal**, and **residual** components.
+
+### SARIMA Modeling
+- Conducts a **grid search** to find optimal SARIMA parameters using the AIC score.
+- Fits the best SARIMA model to the data and evaluates its performance.
+
+### Forecasting
+- Generates short-term forecasts with confidence intervals.
+- Computes **Mean Squared Error (MSE)** and **Root Mean Squared Error (RMSE)** to assess forecast accuracy.
+- Produces long-term forecasts and visualizes them alongside historical data.
+
+---
+
+## Dataset
+
+The script uses a dataset from an Excel file (`Superstore.xls`) containing historical sales data. Update the file path in the script to point to your local dataset.
+
+### Key Columns:
+- **Category:** Filtered to include only "Office Supplies."
+- **Sales:** Target variable for time series modeling.
+
+---
+
+## Requirements
+
+The following Python libraries are required:
+- `pandas`
+- `numpy`
+- `matplotlib`
+- `statsmodels`
+
+Install the dependencies using:
+```bash
+pip install pandas numpy matplotlib statsmodels
+```
+
+## Usage
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-repo-name.git
+cd your-repo-name
+```
+
+2. Run the script:
+
+```bash
+python Forecasting_Supplies.py
+```
+
+3. Update the dataset path (Superstore.xls) in the script if necessary.
+
+## Output
+1. Time Series Analysis:
+- ADF test results (stationarity check).
+- Decomposition plots (trend, seasonal, residual).
+
+2. SARIMA Modeling:
+- AIC scores for model selection.
+- Summary of the best SARIMA model.
+
+3. Forecasting:
+- Visualization of observed vs. forecasted values.
+- Forecast error metrics (MSE and RMSE).
+- Long-term forecast with confidence intervals.
+
