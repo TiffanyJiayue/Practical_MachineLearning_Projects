@@ -71,5 +71,5 @@ python Knearest_BernoulliNM.py
 3. Update the dataset path (winequality.csv) in the script as needed.
 
 ## Output
-KNN Results: Mean accuracy scores for k ranging from 1 to 10 using cross-validation.
-Naive Bayes Results: Model accuracy and confusion matrix heatmap.
+- KNN Results: Mean accuracy scores for k ranging from 1 to 10 using cross-validation.
+- Naive Bayes Results: Model accuracy and confusion matrix heatmap.
