@@ -73,3 +73,61 @@ python Knearest_BernoulliNM.py
 ## Output
 - KNN Results: Mean accuracy scores for k ranging from 1 to 10 using cross-validation.
 - Naive Bayes Results: Model accuracy and confusion matrix heatmap.
+
+
+# Employee Attrition Analysis
+
+This script provides machine learning models to analyze employee attrition data and identify key factors that influence employees' decisions to leave a company. It implements two predictive models:
+
+1. A **Neural Network** for predicting employee attrition.
+2. A **Boosted Ensemble of Trees** to predict attrition and analyze feature importance.
+
+## Overview
+
+The `employee_attrition_analysis.py` script processes a dataset of 1,470 current and former employees. The dataset includes variables such as tenure, gender, education, and other factors that influence attrition. The script applies data preprocessing techniques and builds classification models to analyze the data.
+
+---
+
+## Features
+
+### Data Preprocessing
+- Drops irrelevant columns (e.g., `Over18`, `EmployeeCount`).
+- Encodes categorical variables using `LabelEncoder`.
+- Normalizes numerical features for consistent model performance.
+
+### Predictive Models
+1. **Neural Network (MLPClassifier):**
+   - Implements a multi-layer perceptron with regularization.
+   - Evaluates performance using accuracy and confusion matrix.
+   - Includes cross-validation to validate the model.
+
+2. **Boosted Ensemble of Trees:**
+   - Random Forest for feature importance analysis.
+   - Gradient Boosting Regressor for enhanced prediction accuracy.
+   - Visualizes feature importance for interpretability.
+
+---
+
+## Dataset
+
+The dataset, `Simulate_HRemployee_attrition.csv`, is used to train and test the models. Ensure the file path is correctly set in the script.
+
+### Key Columns:
+- **Attrition (Target):** Binary indicator (`1` for Yes, `0` for No).
+- **Predictors:** Variables such as `tenure`, `gender`, `education`, etc.
+
+---
+
+## Requirements
+
+The following Python libraries are required:
+- `pandas`
+- `numpy`
+- `matplotlib`
+- `seaborn`
+- `scikit-learn`
+
+Install the dependencies using:
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn
+```
