@@ -2,10 +2,10 @@
 # -*- coding: utf-8 -*-
 """
 Created on Wed Dec 11 15:19:48 2024
-
-@author: heiyo
+@author: Tiffany
 """
 
+# Business scenario:
 # A large software company's HR department has hired you to better understand 
 # why some employees are more likely to leave the firm than others. 
 # For this purpose, they give you a data set of 1,470 current and 
@@ -108,6 +108,5 @@ plt.show()
 gb_model = GradientBoostingRegressor(n_estimators=1000, learning_rate=0.01, random_state=0)
 gb_model.fit(X_train, y_train)
 gb_y_pred = gb_model.predict(X_test)
-
 print('Gradient Boosting RMSE:', np.sqrt(mean_squared_error(y_test, gb_y_pred)))
 
