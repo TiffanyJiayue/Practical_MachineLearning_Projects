@@ -2,9 +2,9 @@
 # -*- coding: utf-8 -*-
 """
 Created on Mon Dec  2 15:30:48 2024
-
 @author: Tiffany
 """
+
 # This script analyzes a wine quality dataset to predict 
 # whether a wine is classified as high quality (rating ≥ 7) or not. 
 # It performs data preprocessing by identifying and removing outliers, 
