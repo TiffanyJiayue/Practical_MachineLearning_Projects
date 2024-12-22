@@ -1,6 +1,8 @@
 # Machine Learning
 This repository showcases three distinct machine learning and data analysis projects, each addressing a specific real-world problem using various modeling techniques. From predicting wine quality based on chemical properties to analyzing employee attrition and forecasting office supply sales, the scripts illustrate a range of approaches in classification, regression, and time series forecasting. The projects emphasize data preprocessing, model implementation, and evaluation, offering practical examples of how machine learning can generate actionable insights across diverse domains.
 
+As part of my continuous learning journey, I am taking machine learning courses on Coursera and will update this repository with new techniques and projects as I progress. Stay tuned for the latest additions!
+
 
 # 1. Wine Quality Prediction
 
