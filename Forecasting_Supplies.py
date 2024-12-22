@@ -2,8 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Created on Sat Dec 21 17:25:30 2024
-
-@author: heiyo
+@author: Tiffany
 """
 
 # Analyze historical sales data for office supplies.
@@ -30,10 +29,9 @@ matplotlib.rcParams['ytick.labelsize'] = 12
 matplotlib.rcParams['text.color'] = 'k'
 
 # Load the dataset from a local Excel file and focus on the 'Office Supplies' category
-df = pd.read_excel("/Users/heiyo/Documents/Pitt/MQE学习/MQE/ECON2824_machine/Jan29/Superstore.xls")
+df = pd.read_excel("/Users/XXX/Superstore.xls")
 supplies = df.loc[df['Category'] == 'Office Supplies']
 
-# supplies['Order Date'].min(), supplies['Order Date'].max()
 # Clean and preprocess the data:
 # - Remove unnecessary columns
 # - Sort by 'Order Date' to prepare for time series analysis
