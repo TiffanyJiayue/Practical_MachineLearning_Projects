@@ -2,7 +2,7 @@
 This repository showcases three distinct machine learning and data analysis projects, each addressing a specific real-world problem using various modeling techniques. From predicting wine quality based on chemical properties to analyzing employee attrition and forecasting office supply sales, the scripts illustrate a range of approaches in classification, regression, and time series forecasting. The projects emphasize data preprocessing, model implementation, and evaluation, offering practical examples of how machine learning can generate actionable insights across diverse domains.
 
 
-# Wine Quality Prediction
+# 1. Wine Quality Prediction
 
 A machine learning script for predicting the quality of wine samples based on chemical properties. 
 The script demonstrates the use of two classification techniques: **K-Nearest Neighbors (KNN)** and **Bernoulli Naive Bayes (BNB)**.
@@ -76,7 +76,7 @@ python Knearest_BernoulliNM.py
 
 
 
-# Employee Attrition Analysis
+# 2. Employee Attrition Analysis
 
 This script provides machine learning models to analyze employee attrition data and identify key factors that influence employees' decisions to leave a company. It implements two predictive models:
 
@@ -162,7 +162,7 @@ python employee_attrition_analysis.py
 
 
 
-# Office Supplies Sales Forecasting
+# 3. Office Supplies Sales Forecasting
 
 This script analyzes historical sales data for office supplies, models the time series using the **Seasonal ARIMA (SARIMA)** framework, and generates forecasts for future sales. The goal is to provide actionable insights into sales trends and patterns.
 
