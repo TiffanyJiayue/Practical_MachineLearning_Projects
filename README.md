@@ -51,3 +51,25 @@ The following Python libraries are required to run the script:
 Install the dependencies using:
 ```bash
 pip install pandas numpy matplotlib seaborn scikit-learn
+```
+
+## Usage
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-repo-name.git
+cd your-repo-name
+```
+
+2. Run the script:
+
+```bash
+python Knearest_BernoulliNM.py
+```
+
+3. Update the dataset path (winequality.csv) in the script as needed.
+
+## Output
+KNN Results: Mean accuracy scores for k ranging from 1 to 10 using cross-validation.
+Naive Bayes Results: Model accuracy and confusion matrix heatmap.
