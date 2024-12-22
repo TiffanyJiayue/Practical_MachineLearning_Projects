@@ -1,5 +1,5 @@
 # Machine Learning
-
+This repository showcases three distinct machine learning and data analysis projects, each addressing a specific real-world problem using various modeling techniques. From predicting wine quality based on chemical properties to analyzing employee attrition and forecasting office supply sales, the scripts illustrate a range of approaches in classification, regression, and time series forecasting. The projects emphasize data preprocessing, model implementation, and evaluation, offering practical examples of how machine learning can generate actionable insights across diverse domains.
 
 
 # Wine Quality Prediction
@@ -73,6 +73,7 @@ python Knearest_BernoulliNM.py
 ## Output
 - KNN Results: Mean accuracy scores for k ranging from 1 to 10 using cross-validation.
 - Naive Bayes Results: Model accuracy and confusion matrix heatmap.
+
 
 
 # Employee Attrition Analysis
@@ -157,6 +158,9 @@ python employee_attrition_analysis.py
 2. Boosted Ensemble of Trees:
   - RMSE for predictions.
   - Feature importance bar chart.
+
+
+
 
 # Office Supplies Sales Forecasting
 
