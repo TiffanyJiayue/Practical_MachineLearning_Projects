@@ -131,3 +131,29 @@ Install the dependencies using:
 ```bash
 pip install pandas numpy matplotlib seaborn scikit-learn
 ```
+
+## Usage
+Clone the repository:
+
+```bash
+git clone https://github.com/your-repo-name.git
+cd your-repo-name
+```
+
+Run the script:
+
+```bash
+python employee_attrition_analysis.py
+```
+
+Update the dataset path (Simulate_HRemployee_attrition.csv) in the script if necessary.
+
+## Output
+1. Neural Network:
+  - Accuracy score.
+  - Confusion matrix visualization.
+  - Cross-validation results.
+
+2. Boosted Ensemble of Trees:
+  - RMSE for predictions.
+  - Feature importance bar chart.
